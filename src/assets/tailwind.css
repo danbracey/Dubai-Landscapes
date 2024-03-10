@@ -552,6 +552,10 @@ video {
   display: flex;
 }
 
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 .basis-1\/3 {
   flex-basis: 33.333333%;
 }
@@ -568,9 +572,18 @@ video {
   border-radius: 9999px;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-white {
