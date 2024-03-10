@@ -18,6 +18,6 @@ describe('Contact banner', () => {
                 email: 'customer-services@dubai-landscapes.com',
             }
         })
-        expect(wrapper.text()).toContain('0118 999 881 999 119 7253')
+        expect(wrapper.text()).toContain('customer-services@dubai-landscapes.com')
     })
 })
