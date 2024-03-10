@@ -4,8 +4,8 @@
 import PhoneIcon from "@/components/icons/PhoneIcon.vue";
 
 defineProps<{
-  phone: string,
-  email: string
+  phone?: String,
+  email?: String
 }>()
 import uk_flag from '../assets/uk_flag.webp';
 import EnvelopeIcon from "@/components/icons/EnvelopeIcon.vue";
