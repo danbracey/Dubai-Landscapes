@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.block {
+  display: block;
+}
+
 .inline {
   display: inline;
 }
@@ -554,6 +558,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-3\/5 {
+  height: 60%;
 }
 
 .flex-auto {
@@ -649,11 +657,15 @@ svg {
   font-style: italic;
 }
 
-@media (min-width: 640px) {
-  .sm\:visible {
-    visibility: visible;
-  }
+/** Background Images **/
 
+.img_9804 {
+  background-image: url('src/assets/IMG_9804.jpg');
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 640px) {
   .sm\:block {
     display: block;
   }
@@ -667,5 +679,4 @@ svg {
     line-height: 2.25rem;
   }
 }
-
 

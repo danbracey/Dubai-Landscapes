@@ -44,4 +44,9 @@ svg {
   font-style: italic;
 }
 
+/** Background Images **/
+.img_9804 {
+  background-image: url('src/assets/IMG_9804.jpg');
+  object-fit: contain;
+}
 
