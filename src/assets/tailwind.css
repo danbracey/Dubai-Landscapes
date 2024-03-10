@@ -654,6 +654,10 @@ svg {
     visibility: visible;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
