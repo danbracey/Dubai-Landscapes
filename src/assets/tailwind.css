@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .inline {
   display: inline;
 }
@@ -552,8 +556,16 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .flex-auto {
@@ -572,8 +584,18 @@ video {
   flex-direction: column;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .content-center {
   align-content: center;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .self-center {
@@ -582,6 +604,14 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-b-8 {
+  border-bottom-width: 8px;
 }
 
 .bg-black {
@@ -593,8 +623,25 @@ video {
   background-origin: padding-box;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -607,12 +654,17 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-* {
+:root {
   margin: 0 !important;
+  --olive: #6F7C24;
 }
 
 .bg-olive {
-  background-color: #6F7C24;
+  background-color: var(--olive);
+}
+
+.border-olive {
+  border-color: var(--olive);
 }
 
 .british {
@@ -649,11 +701,25 @@ svg {
   font-style: italic;
 }
 
-@media (min-width: 640px) {
-  .sm\:visible {
-    visibility: visible;
-  }
+/** Background Images **/
 
+.img_9804 {
+  background-image: url('src/assets/IMG_9804.webp');
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.tauri-regular {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 640px) {
   .sm\:block {
     display: block;
   }
@@ -662,9 +728,35 @@ svg {
     flex-direction: row;
   }
 
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
