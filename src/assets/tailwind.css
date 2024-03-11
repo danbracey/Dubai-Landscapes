@@ -836,12 +836,25 @@ select {
   padding-bottom: 2.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -865,6 +878,11 @@ select {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -903,6 +921,8 @@ svg {
   display: inline;
 }
 
+/** Fonts **/
+
 .amaranth-regular {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
@@ -927,6 +947,18 @@ svg {
   font-style: italic;
 }
 
+.tauri-regular {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
 /** Background Images **/
 
 .img_9804 {
@@ -937,12 +969,6 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.tauri-regular {
-  font-family: "Tauri", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .bg-grass {
@@ -1000,4 +1026,3 @@ svg {
     line-height: 1;
   }
 }
-
