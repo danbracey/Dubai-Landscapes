@@ -33,4 +33,14 @@ window.setInterval(function(){
 
 <template>
   <Carousel :banner_text="banner_text" :button_text="button_text" :route_name="route_name" id="carousel"></Carousel>
+  <section class="bg-grass text-white">
+    <h1 class="text-7xl text-center pt-5 font-bold">Garden Landscaping</h1>
+    <p class="px-20 py-10">
+      Your garden or outdoor space is an extension of your entire home. A place where you can relax after a long day, entertain friends and family or socialise with loved ones. At Dubai-Landscapes, we’ve spent a decade in the UAE, crafting bespoke outdoor living spaces that achieve exactly what our clients desire.
+    </p>
+    <ul class="px-20 mb-10">
+      <li>A British company with more than 30 years in the industry, our UAE offering extends across the country, including Abu Dhabi, Dubai and the surrounding areas. </li>
+      <li>Providing our customers with leading British design and installation services for a whole host of outdoor living elements, we always create customised spaces and bespoke gardens that perfectly match the unique specifications of our clients’ outdoor spaces, and align with your vision.</li>
+    </ul>
+  </section>
 </template>

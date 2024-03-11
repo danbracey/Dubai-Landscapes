@@ -66,4 +66,13 @@ svg {
   font-style: normal;
 }
 
+.bg-grass {
+  background-image: url("/src/assets/grass.jpg");
+  background-repeat: repeat;
+  background-color: rgba(0,0,0,.75);
+  background-blend-mode: multiply;
+}
 
+.bg-grass:before {
+  filter: brightness(-70%);
+}

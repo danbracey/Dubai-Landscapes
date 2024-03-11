@@ -7,7 +7,11 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        checkmark: 'url("/src/assets/uk_flag.webp")',
+      },
+    }
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }
