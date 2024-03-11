@@ -93,7 +93,7 @@ svg {
 }
 
 .paragraph {
-  background-color: rgba(0,0,0,.62);
+  background-color: rgba(0,0,0,.6);
   background-blend-mode: multiply;
   background-position: center;
 }

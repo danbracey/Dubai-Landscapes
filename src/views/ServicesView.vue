@@ -13,5 +13,20 @@ import GreenBanner from "@/components/GreenBanner.vue";
     experts who have extensive knowledge of the type of plants that will work best for your outdoor space.
   </TextBlock>
   <GreenBanner>Our range of landscaping services includes:</GreenBanner>
-
+  <!-- Insert CSS Grid here -->
+  <GreenBanner>and much more!</GreenBanner>
+  <TextBlock background_img="IMG_9685.webp">
+    Our team can transform every garden or outdoor space, taking on board the unique requirements of our customers.
+    We never take a ‘one size fits all’ approach, instead tailoring our services specifically to the needs of our clients
+  </TextBlock>
+  <TextBlock background_img="uk_flag.webp">
+    A British-owned company, whose entire team is English managed, we always use products that have been manufactured
+    using the highest quality materials. This includes award-winning artificial turf from Easigrass,
+    a product that is 100% British designed as well as child and pet safe.
+  </TextBlock>
+  <TextBlock background_img="IMG_9596.webp">
+    Operating across the entirety of Dubai and Abu Dhabi, whatever landscaping services you require, Dubai-Landscapes
+    is here to help. Contact us by WhatsApp, on the phone or by filling out our online form,
+    and a member of our team will be able to help.
+  </TextBlock>
 </template>
