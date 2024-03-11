@@ -8,9 +8,10 @@ let button_text = ref("View our Gallery!")
 let route_name = ref("gallery")
 
 const carousel_options = [
-    ['Got Questions?','Contact Us!','contact-us'],
-    ['Our Services','View our services','services'],
-    ["UAE's leading landscapes", 'View our Gallery!', 'gallery']
+    // ["banner text", "button text", "route path", "background image"]
+    ['Got Questions?','Contact Us!','contact-us', 'IMG_9665.webp'],
+    ['Our Services','View our services','services', 'IMG_9648.webp'],
+    ["UAE's leading landscapes", 'View our Gallery!', 'gallery', 'IMG_9804.webp']
 ]
 
 let i = 0;
@@ -20,6 +21,8 @@ window.setInterval(function(){
     banner_text.value = carousel_options[i][0]
     button_text.value = carousel_options[i][1]
     route_name.value = carousel_options[i][2]
+    let carousel = document.getElementById('carousel');
+    carousel.style.backgroundImage = "url('/src/assets/" + carousel_options[i][3] + "')";
 
     i++;
   } else {
@@ -29,5 +32,5 @@ window.setInterval(function(){
 </script>
 
 <template>
-  <Carousel :banner_text="banner_text" :button_text="button_text" :route_name="route_name"></Carousel>
+  <Carousel :banner_text="banner_text" :button_text="button_text" :route_name="route_name" id="carousel"></Carousel>
 </template>
