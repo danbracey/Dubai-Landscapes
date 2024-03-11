@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import type {RouteRecordName} from "vue-router";
+
 defineProps<{
   banner_text?: String,
   button_text?: String,
-  route_name?: String
+  route_name?: RouteRecordName
 }>()
 
 </script>
