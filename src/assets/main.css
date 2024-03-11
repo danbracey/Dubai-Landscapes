@@ -29,6 +29,7 @@ svg {
   display: inline;
 }
 
+/** Fonts **/
 .amaranth-regular {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
@@ -53,6 +54,18 @@ svg {
   font-style: italic;
 }
 
+.tauri-regular {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
 /** Background Images **/
 .img_9804 {
   background-image: url('src/assets/IMG_9804.webp');
@@ -62,12 +75,6 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.tauri-regular {
-  font-family: "Tauri", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .bg-grass {
@@ -84,4 +91,3 @@ svg {
   background-size: cover;
   position: relative;
 }
-
