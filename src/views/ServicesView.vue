@@ -13,7 +13,27 @@ import GreenBanner from "@/components/GreenBanner.vue";
     experts who have extensive knowledge of the type of plants that will work best for your outdoor space.
   </TextBlock>
   <GreenBanner>Our range of landscaping services includes:</GreenBanner>
-  <!-- Insert CSS Grid here -->
+  <section class="grid grid-cols-3 text-center text-3xl md:text-6xl tauri-regular text-white grid-height text-outline" id="services-grid">
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9772.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Gazebos</div>
+    </div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9413.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Paving</div>
+    </div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9648.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Pergola</div>
+    </div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3065.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Decking</div>
+    </div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3298.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Water Features</div>
+    </div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3170.webp');">
+      <div class="absolute inset-0 flex items-center justify-center">Barbecue Areas</div>
+    </div>
+  </section>
+
   <GreenBanner>and much more!</GreenBanner>
   <TextBlock background_img="IMG_9685.webp">
     Our team can transform every garden or outdoor space, taking on board the unique requirements of our customers.

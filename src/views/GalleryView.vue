@@ -13,5 +13,18 @@ import TextBlock from "@/components/TextBlock.vue";
     browse through some of our recent projects.
   </TextBlock>
   <GreenBanner>Projects Gallery</GreenBanner>
-  <!-- Insert CSS Grid here -->
+  <section class="grid grid-cols-6 text-center text-3xl md:text-6xl tauri-regular text-white grid-height text-outline" id="services-grid">
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9772.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9413.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9648.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3065.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3298.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3170.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9700.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9373.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/CM3_4146.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9582.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/016A3289.webp');"></div>
+    <div class="relative grid-height" style="background-image: url('/src/assets/IMG_9725.webp');"></div>
+  </section>
 </template>
