@@ -15,6 +15,10 @@
   border-color: var(--olive);
 }
 
+.bg-semi {
+  background-color: rgba(111, 124, 36, 0.8);
+}
+
 .british {
   width: 40px;
   height: 40px;
@@ -73,6 +77,11 @@ svg {
   background-blend-mode: multiply;
 }
 
-.bg-grass:before {
-  filter: brightness(-70%);
+.bg-9648 {
+  background-image: url("/src/assets/IMG_9648.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+
