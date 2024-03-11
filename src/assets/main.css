@@ -52,7 +52,12 @@ svg {
 /** Background Images **/
 .img_9804 {
   background-image: url('src/assets/IMG_9804.webp');
-  object-fit: scale-down;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .tauri-regular {

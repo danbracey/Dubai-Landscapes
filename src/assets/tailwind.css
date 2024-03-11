@@ -568,10 +568,6 @@ video {
   height: 50%;
 }
 
-.w-1\/6 {
-  width: 16.666667%;
-}
-
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -594,14 +590,6 @@ video {
 
 .content-center {
   align-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -631,16 +619,12 @@ video {
   background-origin: padding-box;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .text-center {
@@ -717,8 +701,12 @@ svg {
 
 .img_9804 {
   background-image: url('src/assets/IMG_9804.webp');
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .tauri-regular {
@@ -730,10 +718,6 @@ svg {
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
-  }
-
-  .sm\:w-1\/6 {
-    width: 16.666667%;
   }
 
   .sm\:flex-row {
@@ -761,10 +745,6 @@ svg {
 }
 
 @media (min-width: 768px) {
-  .md\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
