@@ -22,7 +22,7 @@ window.setInterval(function(){
     button_text.value = carousel_options[i][1]
     route_name.value = carousel_options[i][2]
     let carousel = document.getElementById('carousel');
-    carousel.style.backgroundImage = "url('/src/assets/" + carousel_options[i][3] + "')";
+    carousel!.style.backgroundImage = "url('/src/assets/" + carousel_options[i][3] + "')";
 
     i++;
   } else {
