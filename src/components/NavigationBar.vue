@@ -1,11 +1,4 @@
 <script setup lang="ts">
-
-// defineProps<{
-//   phone?: String,
-//   email?: String
-// }>()
-import uk_flag from '../assets/uk_flag.webp';
-import EnvelopeIcon from "@/components/icons/EnvelopeIcon.vue";
 </script>
 
 <template>

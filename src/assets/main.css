@@ -91,3 +91,9 @@ svg {
   background-size: cover;
   position: relative;
 }
+
+.paragraph {
+  background-color: rgba(0,0,0,.62);
+  background-blend-mode: multiply;
+  background-position: center;
+}
