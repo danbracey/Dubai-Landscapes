@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 
-import { mount, RouterLinkStub } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import TextBlock from "../TextBlock.vue";
 
 describe('Paragraph/Text Block', () => {

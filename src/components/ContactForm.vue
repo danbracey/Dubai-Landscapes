@@ -1,4 +1,4 @@
-<script setup lang="ts" xmlns="http://www.w3.org/1999/html">
+<script setup lang="ts">
 defineProps<{
   h1?: String,
   subtitle?: String
@@ -13,7 +13,7 @@ defineProps<{
         Please correct the following errors
       </div>
       <ul class="border border-t-0 border-orange-400 rounded-b bg-orange-100 px-4 py-3 text-orange-700">
-        <li v-for="error in errorArray" key="error">{{ error }}</li>
+        <li v-for="error in errorArray" :key="error">{{ error }}</li>
       </ul>
     </div>
 
@@ -34,9 +34,9 @@ defineProps<{
 
 <script lang="ts">
 
-import {computed, type Ref, ref, type UnwrapRef} from 'vue'
+import {computed, type Ref, ref} from 'vue'
 
-let errors: any = ref([]);
+let errors: Ref = ref([]);
 let name: string | any = null;
 let email: string | any = null;
 let message: any = null;
