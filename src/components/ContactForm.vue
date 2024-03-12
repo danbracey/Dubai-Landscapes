@@ -34,9 +34,9 @@ defineProps<{
 
 <script lang="ts">
 
-import {computed, type Ref, ref, type UnwrapRef} from 'vue'
+import {computed, type Ref, ref} from 'vue'
 
-let errors: any = ref([]);
+let errors: Ref = ref([]);
 let name: string | any = null;
 let email: string | any = null;
 let message: any = null;
