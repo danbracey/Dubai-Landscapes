@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Hero from "@/components/Hero.vue";
+import Hero from "@/components/HeroBanner.vue";
 import TextBlock from "@/components/TextBlock.vue";
 import GreenBanner from "@/components/GreenBanner.vue";
 </script>

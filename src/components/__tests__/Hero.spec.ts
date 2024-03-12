@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Hero from "../Hero.vue";
+import Hero from "../HeroBanner.vue";
 
 describe('Hero section', () => {
     const wrapper = mount(Hero, {

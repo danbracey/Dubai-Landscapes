@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Hero from "@/components/Hero.vue";
+import Hero from "@/components/HeroBanner.vue";
 import {type Ref, ref, type UnwrapRef} from 'vue'
 
 let item1: Ref<UnwrapRef<boolean>>;
