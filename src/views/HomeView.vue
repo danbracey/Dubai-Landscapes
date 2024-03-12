@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Carousel from "@/components/Carousel.vue";
+import Carousel from "@/components/CarouselBanner.vue";
 import { ref } from 'vue';
 
 /** Setting default values for the Carousel **/

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount, RouterLinkStub } from '@vue/test-utils'
-import Carousel from "../Carousel.vue";
+import Carousel from "../CarouselBanner.vue";
 
 describe('Carousel', () => {
     const wrapper = mount(Carousel, {
