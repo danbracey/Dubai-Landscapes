@@ -1,5 +1,7 @@
 {
   "files": [],
+  "noImplicitAny": false, //Allow for import of FAQ Accordion
+  "allowJs": true, //Allow for import of FAQ Accordion
   "compilerOptions": {
     // ...
     "types": [

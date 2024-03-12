@@ -1,6 +1,17 @@
 <script setup lang="ts">
 import Hero from "@/components/Hero.vue";
-import TextBlock from "@/components/TextBlock.vue";
+import {type Ref, ref, type UnwrapRef} from 'vue'
+
+let item1: Ref<UnwrapRef<boolean>>;
+let item2: Ref<UnwrapRef<boolean>>;
+let item3: Ref<UnwrapRef<boolean>>;
+let item4: Ref<UnwrapRef<boolean>>;
+
+item1 = ref(false);
+item2 = ref(false);
+item3 = ref(false);
+item4 = ref(false);
+
 </script>
 
 <template>
@@ -19,4 +30,46 @@ import TextBlock from "@/components/TextBlock.vue";
       Drop us a message on WhatsApp or give us a call.
     </p>
   </article>
+  <section class="bg-grass tauri-regular sm:px-10 lg:px-40 py-10">
+    <article class="pb-5">
+      <h2 class="bg-white rounded-full text-3xl px-10" @click='item1 = !item1'>Question</h2>
+      <p class="bg-white mx-10 rounded-b-lg mb-5 px-10" v-show="!item1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada tincidunt diam at egestas.
+        In blandit augue lorem, et euismod diam mollis id. Aliquam in sem velit.
+        Morbi facilisis suscipit ex vel bibendum. Suspendisse consequat in sapien a fermentum.
+        Morbi vel metus et ex ornare ultrices vitae luctus eros.
+        Etiam lacinia gravida turpis, eu molestie mauris convallis vel.
+      </p>
+    </article>
+    <article class="pb-5">
+      <h2 class="bg-white rounded-full text-3xl px-10" @click="item2 = !item2">Question</h2>
+      <p class="bg-white mx-10 rounded-b-lg mb-5 px-10" v-show="item2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada tincidunt diam at egestas.
+        In blandit augue lorem, et euismod diam mollis id. Aliquam in sem velit.
+        Morbi facilisis suscipit ex vel bibendum. Suspendisse consequat in sapien a fermentum.
+        Morbi vel metus et ex ornare ultrices vitae luctus eros.
+        Etiam lacinia gravida turpis, eu molestie mauris convallis vel.
+      </p>
+    </article>
+    <article class="pb-5">
+      <h2 class="bg-white rounded-full text-3xl px-10" @click="item3 = !item3">Question</h2>
+      <p class="bg-white mx-10 rounded-b-lg mb-5 px-10" v-show="item3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada tincidunt diam at egestas.
+        In blandit augue lorem, et euismod diam mollis id. Aliquam in sem velit.
+        Morbi facilisis suscipit ex vel bibendum. Suspendisse consequat in sapien a fermentum.
+        Morbi vel metus et ex ornare ultrices vitae luctus eros.
+        Etiam lacinia gravida turpis, eu molestie mauris convallis vel.
+      </p>
+    </article>
+    <article class="pb-5">
+      <h2 class="bg-white rounded-full text-3xl px-10" @click="item4 = !item4">Question</h2>
+      <p class="bg-white mx-10 rounded-b-lg mb-5 px-10" v-show="item4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada tincidunt diam at egestas.
+        In blandit augue lorem, et euismod diam mollis id. Aliquam in sem velit.
+        Morbi facilisis suscipit ex vel bibendum. Suspendisse consequat in sapien a fermentum.
+        Morbi vel metus et ex ornare ultrices vitae luctus eros.
+        Etiam lacinia gravida turpis, eu molestie mauris convallis vel.
+      </p>
+    </article>
+  </section>
 </template>
