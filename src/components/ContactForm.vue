@@ -13,7 +13,7 @@ defineProps<{
         Please correct the following errors
       </div>
       <ul class="border border-t-0 border-orange-400 rounded-b bg-orange-100 px-4 py-3 text-orange-700">
-        <li v-for="error in errorArray" key="error">{{ error }}</li>
+        <li v-for="error in errorArray" :key="error">{{ error }}</li>
       </ul>
     </div>
 
