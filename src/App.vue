@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import ContactBanner from "@/components/ContactBanner.vue";
 import NavigationBar from "@/components/NavigationBar.vue";
 </script>
