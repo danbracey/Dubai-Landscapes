@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Hero from "@/components/Hero.vue";
+import ContactForm from "@/components/ContactForm.vue";
 </script>
 
 <template>
@@ -20,4 +21,5 @@ import Hero from "@/components/Hero.vue";
       our team will get in touch with you.
     </p>
   </article>
+  <ContactForm></ContactForm>
 </template>
