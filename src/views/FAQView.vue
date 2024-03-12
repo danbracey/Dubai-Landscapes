@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Hero from "@/components/Hero.vue";
-import { ref } from 'vue'
+import {type Ref, ref, type UnwrapRef} from 'vue'
 
 let item1: Ref<UnwrapRef<boolean>>;
 let item2: Ref<UnwrapRef<boolean>>;
