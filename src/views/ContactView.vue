@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm.vue";
 <template>
   <Hero h1="Contact Us" subtitle="Get in touch today"></Hero>
   <!-- Can't use TextBlock component here due to multi-paragraphs -->
-  <article class="text-white py-36 paragraph" :style="{ backgroundImage: 'url(/src/assets/016A3298.webp)' }">
+  <article class="text-white py-36 paragraph" :style="{ 'background-image': `url(${_016A3298})` }">
     <p class="px-20 py-10 tauri-regular text-xl">
       If you need any more information on the range of services Dubai-Landscapes offers,
       or want to hire our team to carry out work on your property in the UAE, we’re always here to help.
@@ -23,3 +23,6 @@ import ContactForm from "@/components/ContactForm.vue";
   </article>
   <ContactForm></ContactForm>
 </template>
+<script lang="ts">
+  import _016A3298 from '@/assets/016A3298.webp';
+</script>
