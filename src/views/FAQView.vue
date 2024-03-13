@@ -17,7 +17,7 @@ item4 = ref(false);
 <template>
   <Hero h1="Frequently Asked Questions" subtitle=""></Hero>
   <!-- Can't use TextBlock component here due to multi-paragraphs -->
-  <article class="text-white py-36 paragraph" :style="{ backgroundImage: 'url(/src/assets/016A3298.webp)' }">
+  <article class="text-white py-36 paragraph" :style="{ 'background-image': `url(${_016A3298})` }">
     <p class="px-20 py-10 tauri-regular text-xl">
       Want to know more about the services we offer?
       Maybe you have specific questions about our processes that you’d like to learn more about?
@@ -73,3 +73,6 @@ item4 = ref(false);
     </article>
   </section>
 </template>
+<script lang="ts">
+  import _016A3298 from '@/assets/016A3298.webp';
+</script>
