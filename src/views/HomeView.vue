@@ -6,26 +6,29 @@ import { ref } from 'vue';
 let banner_text = ref("UAE's leading landscapes");
 let button_text = ref("View our Gallery!")
 let route_name = ref("gallery")
+let background_image = ref(IMG_9528)
+
+//Import static assets
+import IMG_9528 from '@/assets/IMG_9528.webp';
+import IMG_9665 from '@/assets/IMG_9665.webp';
+import IMG_9648 from '@/assets/IMG_9648.webp';
+import IMG_9804 from '@/assets/IMG_9804.webp';
 
 const carousel_options = [
     // ["banner text", "button text", "route path", "background image"]
-    ['Got Questions?','Contact Us!','contact-us', 'IMG_9665.webp'],
-    ['Our Services','View our services','services', 'IMG_9648.webp'],
-    ["UAE's leading landscapes", 'View our Gallery!', 'gallery', 'IMG_9804.webp']
+    ['Got Questions?','Contact Us!','contact-us', IMG_9665],
+    ['Our Services','View our services','services', IMG_9648],
+    ["UAE's leading landscapes", 'View our Gallery!', 'gallery', IMG_9804]
 ]
 
 let i = 0;
 //Update carousel every 5 seconds
 window.setInterval(function(){
   if(i < carousel_options.length) {
-    banner_text.value = carousel_options[i][0]
-    button_text.value = carousel_options[i][1]
-    route_name.value = carousel_options[i][2]
-    let carousel = document.getElementById('carousel');
-    if(carousel) {
-      carousel!.style.backgroundImage = "url('/src/assets/" + carousel_options[i][3] + "')";
-    }
-
+    banner_text.value = carousel_options[i][0] //Take the first value from the array
+    button_text.value = carousel_options[i][1] //Take the second value from the array
+    route_name.value = carousel_options[i][2] //Take the third value from the array
+    background_image.value = carousel_options[i][3] //Take the import from the array, which links to the static assets above.
     i++;
   } else {
     i = 0; //Reset counter to go through the carousel again
@@ -34,7 +37,7 @@ window.setInterval(function(){
 </script>
 
 <template>
-  <Carousel :banner_text="banner_text" :button_text="button_text" :route_name="route_name" id="carousel"></Carousel>
+  <Carousel :banner_text="banner_text" :button_text="button_text" :route_name="route_name" id="carousel" :style="{ 'background-image': `url(${background_image})` }">></Carousel>
   <section class="bg-grass text-white">
     <h1 class="text-7xl text-center pt-5 font-bold tauri-regular">Garden Landscaping</h1>
     <p class="px-20 py-10 tauri-regular">

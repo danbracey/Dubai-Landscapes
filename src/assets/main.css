@@ -36,24 +36,6 @@ svg {
   font-style: normal;
 }
 
-.amaranth-bold {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.amaranth-regular-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.amaranth-bold-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .tauri-regular {
   font-family: "Tauri", sans-serif;
   font-weight: 400;
@@ -67,10 +49,7 @@ svg {
 }
 
 /** Background Images **/
-.img_9804 {
-  background-image: url('src/assets/IMG_9804.webp');
-  /*background-position: center;*/
-  /*background-size: cover;*/
+.bg-center {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,14 +61,6 @@ svg {
   background-repeat: repeat;
   background-color: rgba(0,0,0,.75);
   background-blend-mode: multiply;
-}
-
-.bg-9648 {
-  background-image: url("/src/assets/IMG_9648.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .paragraph {
