@@ -739,6 +739,10 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -800,6 +804,10 @@ select {
   height: 50%;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -830,6 +838,10 @@ select {
 
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -930,8 +942,17 @@ select {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-origin-padding {
   background-origin: padding-box;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -1085,24 +1106,6 @@ svg {
   font-style: normal;
 }
 
-.amaranth-bold {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.amaranth-regular-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.amaranth-bold-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .tauri-regular {
   font-family: "Tauri", sans-serif;
   font-weight: 400;
@@ -1117,10 +1120,7 @@ svg {
 
 /** Background Images **/
 
-.img_9804 {
-  background-image: url('src/assets/IMG_9804.webp');
-  /*background-position: center;*/
-  /*background-size: cover;*/
+.bg-center {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1132,14 +1132,6 @@ svg {
   background-repeat: repeat;
   background-color: rgba(0,0,0,.75);
   background-blend-mode: multiply;
-}
-
-.bg-9648 {
-  background-image: url("/src/assets/IMG_9648.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 .paragraph {

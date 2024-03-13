@@ -1,14 +1,12 @@
 <script setup lang="ts">
-
-
 import PhoneIcon from "@/components/icons/PhoneIcon.vue";
+import uk_flag from '../assets/uk_flag.webp';
+import EnvelopeIcon from "@/components/icons/EnvelopeIcon.vue";
 
 defineProps<{
   phone?: String,
   email?: String
 }>()
-import uk_flag from '../assets/uk_flag.webp';
-import EnvelopeIcon from "@/components/icons/EnvelopeIcon.vue";
 </script>
 
 <template>
@@ -18,6 +16,7 @@ import EnvelopeIcon from "@/components/icons/EnvelopeIcon.vue";
     British company
   </span>
   <span class="sm:basis-3/3 text-base self-center content-center basis-full" id="phone_number">
+    <!-- Including Phone and Envelope icons as SVGs in their own components so they can be re-used later by the client -->
     <PhoneIcon width="30"></PhoneIcon>
     {{phone}}
   </span>
