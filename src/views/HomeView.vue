@@ -2,7 +2,7 @@
 import Carousel from "@/components/CarouselBanner.vue";
 import { ref } from 'vue';
 
-/** Setting default values for the Carousel **/
+// Setting default values for the Carousel
 let banner_text = ref("UAE's leading landscapes");
 let button_text = ref("View our Gallery!")
 let route_name = ref("gallery")
@@ -11,7 +11,7 @@ let background_image = ref(IMG_9528)
 //Import static assets
 import IMG_9528 from '@/assets/IMG_9528.webp';
 import IMG_9665 from '@/assets/IMG_9665.webp';
-import IMG_9648 from '@/assets/IMG_9648.webp';
+import IMG_9648 from '@/assets/IMG_9648.webp'; //Used in the last text article, do not remove import even if removed from carousel
 import IMG_9804 from '@/assets/IMG_9804.webp';
 
 const carousel_options = [
@@ -48,7 +48,7 @@ window.setInterval(function(){
       <li>Providing our customers with leading British design and installation services for a whole host of outdoor living elements, we always create customised spaces and bespoke gardens that perfectly match the unique specifications of our clients’ outdoor spaces, and align with your vision.</li>
     </ul>
   </section>
-  <article class="bg-9648 text-white py-10">
+  <article class="bg-center text-white py-10" :style="{ 'background-image': `url(${IMG_9648})` }">
     <p class="px-20 pt-10 bg-semi tauri-regular">
       Over the years, we’ve earned a reputation for being the premier landscaping company in the UAE.
       Not only is this due to the high-quality products and services we offer, but our team is also renowned for the focus on customer care that we provide.

@@ -30,7 +30,8 @@ item4 = ref(false);
       Drop us a message on WhatsApp or give us a call.
     </p>
   </article>
-  <section class="bg-grass tauri-regular sm:px-10 lg:px-40 py-10">
+  <!-- Use a small padding on the X axis until reaching a large breakpoint allowing for centering of the FAQ section -->
+  <section class="bg-grass tauri-regular px-10 lg:px-40 py-10">
     <article class="pb-5">
       <h2 class="bg-white rounded-full text-3xl px-10" @click='item1 = !item1'>Question</h2>
       <p class="bg-white mx-10 rounded-b-lg mb-5 px-10" v-show="!item1">

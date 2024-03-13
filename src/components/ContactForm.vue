@@ -8,11 +8,13 @@ defineProps<{
 <template>
 <section class=" bg-grass py-10 text-center">
   <form class="lg:rounded-3xl bg-white py-10" @submit="submitForm" id="contact-form">
+    <!-- Use v-if to check for any associated errors -->
     <div role="alert" v-if="errorArray.length" class="justify-center md:w-1/3 inline-block mb-10">
       <div class="bg-orange-500 text-white font-bold rounded-t px-4 py-2">
         Please correct the following errors
       </div>
       <ul class="border border-t-0 border-orange-400 rounded-b bg-orange-100 px-4 py-3 text-orange-700">
+        <!-- If errors found, loop through them and display to the user -->
         <li v-for="error in errorArray" :key="error">{{ error }}</li>
       </ul>
     </div>
@@ -37,18 +39,21 @@ defineProps<{
 import {computed, type Ref, ref} from 'vue'
 
 let errors: Ref = ref([]);
-let name: string | any = null;
-let email: string | any = null;
-let message: any = null;
+// Specify form fields and their associated types
+let name: string | null = null;
+let email: string | null = null;
+let message: string | null = null;
+// Email regex finds matches valid email addresses
 const email_regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
+//Using computed values to allow for Vue's Virtual DOM reactivity
 const errorArray = computed(() => {
   return errors.value
 })
 
 function submitForm(e: any) {
-  e.preventDefault();
-  errors.value = [];
+  e.preventDefault(); //Don't execute the form
+  errors.value = []; //Clear the error array when the form is submitted so the user doesn't see past errors.
 
   if (!name) {
     errors.value.push('Name required');
@@ -59,7 +64,8 @@ function submitForm(e: any) {
   if (!message) {
     errors.value.push("Your message is required - we're great at landscaping, not mind reading!");
   }
-  if (email && !email_regex.test(email)) {
+  if (email && !email_regex.test(email)) { //RegEx test the email against the pattern above
+    // The 'type=email' on the email input should render this code unnecessary but better safe than sorry.
     errors.value.push('The email address supplied is invalid');
   }
 }
