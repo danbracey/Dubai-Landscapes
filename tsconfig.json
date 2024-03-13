@@ -3,6 +3,7 @@
   "noImplicitAny": false, //Allow for import of FAQ Accordion
   "allowJs": true, //Allow for import of FAQ Accordion
   "compilerOptions": {
+    "strict": false,
     // ...
     "types": [
       "vite/client", // if using vite
