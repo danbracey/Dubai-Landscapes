@@ -20,13 +20,13 @@ defineProps<{
     </div>
 
     <label class="tauri-regular block pb-5"> Your name
-      <input type="text" name="name" v-model="name" class="rounded-full border-olive border-4 col-span-2 w-1/2"/>
+      <input type="text" name="name" autocomplete="name" v-model="name" class="rounded-full border-olive border-4 col-span-2 w-1/2"/>
     </label>
     <label class="tauri-regular block pb-5"> Your email
-      <input type="email" name="email" v-model="email" class="rounded-full border-olive border-4 col-span-2 w-1/2"/>
+      <input type="email" name="email" autocomplete="email" v-model="email" class="rounded-full border-olive border-4 col-span-2 w-1/2"/>
     </label>
     <label class="tauri-regular block pb-5 lg:mx-40"> Your message
-      <textarea class="rounded-2xl border-olive border-4 col-span-2 w-full" v-model="message" rows="5"></textarea>
+      <textarea class="rounded-2xl border-olive border-4 col-span-2 w-full" v-model="message" rows="5" name="message"></textarea>
     </label>
     <button type="submit" id="submit" name="submit" class="block"></button>
     <button class="bg-black border-5 rounded-3xl sm:text-2xl py-2 px-10 border-4 border-olive mb-8 text-white">Submit</button>
